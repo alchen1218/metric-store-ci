@@ -84,9 +84,9 @@ resources:
 - name: bake-image
   type: docker-image
   source:
-    repository: gcr.io/cf-denver/docker-bake
-    username: _json_key
-    password: ((metric-store.denver_service_account_key))
+    repository: tas-obsr-docker-virtual.usw1.packages.broadcom.com/docker-bake
+    username: ((metric-store.jfrog-svc-username))
+    password: ((metric-store.jfrog-svc-password)
     tag: latest
 
 - name: metric-store-develop
